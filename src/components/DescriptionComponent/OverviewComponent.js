@@ -1,91 +1,97 @@
-import React from 'react'
-import { makeStyles } from '@material-ui/core/styles';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-        fontFamily: 'poppins',
-        fontSize: '20px',
-        maxWidth: '1200px',
-        margin: '0 auto',
-        marginTop: '30px',
+  root: {
+    fontFamily: "poppins",
+    width: "75vw",
+    marginTop: "5vh",
+    [theme.breakpoints.up("xs")]: {
+      fontSize: "15px",
     },
-    horizontalLine: {
-        border: '2px solid darkblue'
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "18px",
+      marginBottom: "0vh",
     },
-    heading: {
-        fontSize: '50px',
-        backgroundColor: 'black',
-        color: 'white'
+    [theme.breakpoints.up("md")]: {
+      fontSize: "20px",
+      marginBottom: "0vh",
     },
-    descText: {
-        paddingTop: '20px'
-    }
+  },
+  horizontalLine: {
+    border: "2px solid darkblue",
+  },
+  heading: {
+    backgroundColor: "black",
+    color: "white",
+    [theme.breakpoints.up("xs")]: {
+      fontSize: "25px",
+    },
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "35px",
+    },
+    [theme.breakpoints.up("md")]: {
+      fontSize: "50px",
+    },
+  },
+  tableDiv: {
+    width: "100%",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+  },
+  table: {
+    width: "80%",
+    marginTop: "3vh",
+    marginBottom: "3vh",
+    [theme.breakpoints.up("xs")]: {
+      width: "100%",
+      marginBottom: "5vh",
+    },
+    [theme.breakpoints.up("md")]: {
+      width: "70%",
+      marginBottom: "5vh",
+    },
+  },
 }));
 
 const OverviewComponent = () => {
-    const classes = useStyles();
+  const classes = useStyles();
 
-    return (
-        <div className={classes.root}>
-            <hr className={classes.horizontalLine}></hr>
-            <div className={classes.heading}>
-                PROJECT OVERVIEW
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'row', marginTop: '20px' }}>
-                <div style={{ flex: '50%' }}>
-                    Project Location
-                </div>
-                <div style={{ flex: '50%' }}>
-                    Whitefield, Bangalore
-                </div>
-            </div>
+  return (
+    <div className={classes.root}>
+      <hr className={classes.horizontalLine}></hr>
+      <div className={classes.heading}>PROJECT OVERVIEW</div>
+      <div className={classes.tableDiv}>
+        <table className={classes.table}>
+          <tr>
+            <td>Project Location</td>
+            <td>Whitefield, Bangalore</td>
+          </tr>
+          <tr>
+            <td>Total Land Area</td>
+            <td>16.5 Acres</td>
+          </tr>
+          <tr>
+            <td>No. of Units</td>
+            <td>689</td>
+          </tr>
+          <tr>
+            <td>No. of Floors</td>
+            <td>On Request</td>
+          </tr>
+          <tr>
+            <td>Unit Variants</td>
+            <td>Suite, 2 BHK, 3 BHK & 4 BHK</td>
+          </tr>
+          <tr>
+            <td>Project Status</td>
+            <td>Launch</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  );
+};
 
-            <div style={{ display: 'flex', flexDirection: 'row', marginTop: '20px' }}>
-                <div style={{ flex: '50%' }}>
-                    Total Land Area
-                </div>
-                <div style={{ flex: '50%' }}>
-                    16.5 Acres
-                </div>
-            </div>
-
-            <div style={{ display: 'flex', flexDirection: 'row', marginTop: '20px' }}>
-                <div style={{ flex: '50%' }}>
-                    No. of Units
-                </div>
-                <div style={{ flex: '50%' }}>
-                    689
-                </div>
-            </div>
-
-            <div style={{ display: 'flex', flexDirection: 'row', marginTop: '20px' }}>
-                <div style={{ flex: '50%' }}>
-                    No. of Floors
-                </div>
-                <div style={{ flex: '50%' }}>
-                    On Request
-                </div>
-            </div>
-
-            <div style={{ display: 'flex', flexDirection: 'row', marginTop: '20px' }}>
-                <div style={{ flex: '50%' }}>
-                    Unit Variants
-                </div>
-                <div style={{ flex: '50%' }}>
-                    Suite, 2 BHK, 3 BHK & 4 BHK
-                </div>
-            </div>
-
-            <div style={{ display: 'flex', flexDirection: 'row', marginTop: '20px' }}>
-                <div style={{ flex: '50%' }}>
-                    Project Status
-                </div>
-                <div style={{ flex: '50%' }}>
-                    Launch
-                </div>
-            </div>
-        </div>
-    )
-}
-
-export default OverviewComponent
+export default OverviewComponent;

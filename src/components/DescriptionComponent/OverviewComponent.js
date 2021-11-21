@@ -84,7 +84,7 @@ const OverviewComponent = () => {
           <div className={classes.dataRow}>
             <div className={classes.tData}>Location</div>
             <div className={classes.tData}>
-              Whitefield, BangaloreOff Hennur Road, North Bangalore
+              Off Hennur Road, North Bangalore
             </div>
           </div>
           <div className={classes.dataRow}>

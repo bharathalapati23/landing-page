@@ -18,7 +18,8 @@ const useStyles = makeStyles((theme) => ({
   bgImage: {
     width: "100%",
     // backgroundImage: `url(https://teja10.kuikr.com//r1/20160216/ak_765_632143999-1455611128_700x700.png)`,
-    backgroundImage: `linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url(https://constructionweekonlineindia.storage.googleapis.com/public/styles/full_img/public/images/2019/10/10/real-estate.jpg?itok=gw_oQH33.jpg)`,
+    // backgroundImage: `linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url(https://constructionweekonlineindia.storage.googleapis.com/public/styles/full_img/public/images/2019/10/10/real-estate.jpg?itok=gw_oQH33.jpg)`,
+    backgroundImage: `linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url(https://teja12.kuikr.com/is/a/c/1200x500/gallery_images/original/cf5c5286d9afce2.gif)`,
     backgroundAttachment: "fixed",
     backgroundRepeat: "no-repeat",
     backgroundSize: "100% 100vh",
@@ -78,6 +79,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     fontFamily: "poppins",
+    fontSize: "20px",
     justifyContent: "space-around",
     [theme.breakpoints.up("xs")]: {
       flexDirection: "column",
@@ -100,12 +102,12 @@ const BrochureComponent = () => {
     <div className={classes.bgImage}>
       <div className={classes.root}>
         <div>
-          <div className={classes.heading}>PRESTIGE WATERFORD</div>
+          <div className={classes.heading}>ADARSH TRANQVILLE</div>
           <div className={classes.subHeading}>
-            PEACEFUL LIVING WITH QUALITY LIFESTYLE
+            Luxury Villas by Adarsh Developers Off Hennur Road, North Bangalore
           </div>
           <div className={classes.configurationHeading}>
-            Suite, 2 BHK, 3 BHK & 4 BHK LUXURY HOMES IN WHITEFIELD
+            Suite, 2 BHK, 3 BHK & 4 BHK LUXURY HOMES
           </div>
         </div>
         <div className={classes.enquiry}>
@@ -113,7 +115,7 @@ const BrochureComponent = () => {
             <div>
               Download Your
               <br />
-              <strong>FREE PRESTIGE WATERFORD</strong>
+              <strong>FREE ADARSH TRANQVILLE</strong>
               <br />
               Brochure Now!
             </div>

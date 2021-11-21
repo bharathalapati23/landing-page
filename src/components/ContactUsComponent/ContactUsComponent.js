@@ -78,8 +78,8 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "4vw",
     marginRight: "4vw",
     fontSize: "18px",
-    [theme.breakpoints.between("xs", "md")]: {
-      fontSize: "13px",
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: "14px",
     },
   },
   form: {
@@ -187,7 +187,7 @@ const ContactUsComponent = () => {
               <KeyboardArrowUpIcon fontSize="large" />
             )}
           </IconButton>
-          About Tranqville
+          About Adarsh Tranqville
         </div>
         <Collapse in={open1} timeout="auto" unmountOnExit>
           <ul className={classes.aboutDetails}>
@@ -225,7 +225,7 @@ const ContactUsComponent = () => {
               <KeyboardArrowUpIcon fontSize="large" />
             )}
           </IconButton>
-          About Developers
+          About Adarsh Developers
         </div>
         <Collapse in={open2} timeout="auto" unmountOnExit>
           <ul className={classes.aboutDetails}>

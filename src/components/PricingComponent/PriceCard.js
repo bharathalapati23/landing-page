@@ -88,7 +88,8 @@ const PriceCard = () => {
           <br />
         </Typography>
         <Typography variant="h6" component="div">
-          G Corp Residences <br />4 BHK Price
+          Adarsh Tranqville
+          <br />4 BHK Price
         </Typography>
         <p />
         <Typography sx={{ mb: 1.5 }} color="text.secondary">

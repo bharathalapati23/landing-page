@@ -45,9 +45,17 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
   },
+  paraAmenities: {
+    justifyContent: "left",
+    margin: "4%",
+    paddingLeft: "5%",
+    paddingRight: "5%",
+    fontSize: "22px",
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: "14px",
+    },
+  },
   heading: {
-    // backgroundColor: "black",
-    // color: "white",
     textDecoration: "underline",
     fontWeight: "bolder",
     marginTop: "40px",
@@ -128,7 +136,7 @@ const useStyles = makeStyles((theme) => ({
       height: "60vh",
     },
     [theme.breakpoints.up("md")]: {
-      width: "auto",
+      width: "80vw",
       height: "90vh",
     },
     // boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px",
@@ -153,7 +161,7 @@ const useStyles = makeStyles((theme) => ({
       width: "80vw",
     },
     [theme.breakpoints.between("sm", "md")]: {
-      width: "50vw",
+      width: "70vw",
     },
     [theme.breakpoints.up("md")]: {
       width: "30vw",
@@ -169,24 +177,6 @@ const useStyles = makeStyles((theme) => ({
       alignItems: "center",
     },
   },
-  // planCol2: {
-  //   marginTop: "10px",
-  //   marginBottom: "10px",
-  //   [theme.breakpoints.between("xs", "sm")]: {
-  //     display: "flex",
-  //     flexDirection: "row",
-  //     justifyContent: "center",
-  //     alignItems: "center",
-  //   },
-  // },
-  // illImage2: {
-  //   [theme.breakpoints.between("xs", "sm")]: {
-  //     width: "83vw",
-  //   },
-  //   [theme.breakpoints.up("sm")]: {
-  //     marginLeft: "8px",
-  //   },
-  // },
 }));
 
 const PricingComponent = () => {
@@ -195,7 +185,6 @@ const PricingComponent = () => {
   return (
     <>
       <div className={classes.root}>
-        {/* <hr className={classes.horizontalLine} /> */}
         <div className={classes.heading}>PRICING</div>
         <div className={classes.cards}>
           <div className={classes.priceCardRoot}>
@@ -211,7 +200,13 @@ const PricingComponent = () => {
             Schedule My Site-Visit
           </Button>
         </a>
-
+        <div className={classes.heading}>AMENITIES</div>
+        <p className={classes.paraAmenities}>
+          Gym, Swimming Pool, Kid's Pool, Badminton, Table Tennis, Billiards &
+          Snooker, Health Club & Spa, Aerobics/Yoga, Indoor Games, Outdoor
+          Multiplay Area, Multipurpose Hall, Convenience Store, Outdoor Kid's
+          Play Area.
+        </p>
         <div className={classes.heading}>MASTER PLAN</div>
         <div className={classes.mPlan}>
           <img

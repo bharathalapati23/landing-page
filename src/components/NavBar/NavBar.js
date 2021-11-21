@@ -24,14 +24,15 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "20px",
     Width: "100%",
     alignItems: "center",
-    [theme.breakpoints.up("xs")]: {
-      justifyContent: "center",
-      paddingRight: "0%",
+    justifyContent: "space-between",
+    paddingLeft: "10%",
+    paddingRight: "10%",
+    [theme.breakpoints.between("xs", "sm")]: {
+      flexDirection: "column",
     },
-    [theme.breakpoints.up("md")]: {
-      justifyContent: "flex-end",
-      paddingRight: "10%",
-    },
+  },
+  navImage: {
+    height: "10vh",
   },
 }));
 
@@ -40,6 +41,11 @@ function NavBar() {
 
   return (
     <div className={classes.root}>
+      <img
+        src="https://www.theadarshtranqville.in/wp-content/uploads/2021/08/Adarsh-Tranqville-Logo-1.png"
+        alt="planIllustration"
+        className={classes.navImage}
+      />
       <h4>CALL US : 95138 69695</h4>
     </div>
   );

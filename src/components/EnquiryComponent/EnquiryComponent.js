@@ -69,6 +69,7 @@ const EnquiryComponent = () => {
         name="name"
         variant="filled"
         label="Name"
+        type="text"
         value={formData.name}
         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
         className={classes.textFieldStyles}
@@ -78,6 +79,7 @@ const EnquiryComponent = () => {
         name="email"
         variant="filled"
         label="Email"
+        type="email"
         value={formData.email}
         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
         className={classes.textFieldStyles}
@@ -87,6 +89,7 @@ const EnquiryComponent = () => {
         name="phone"
         variant="filled"
         label="Phone"
+        type="number"
         value={formData.phone}
         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
         className={classes.textFieldStyles}
